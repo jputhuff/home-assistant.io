@@ -11,22 +11,22 @@ logo: vera.png
 ha_category: Hub
 ---
 
-The [Vera](http://getvera.com) hub is a controller ainly connecting to Z-Wave devices.
+The [Vera](http://getvera.com) hub is a controller mainly connecting to Z-Wave devices.
 
-Switches, Lights (inc Dimmers), Sensors and Binary sensors are supported - and will be automaticaly added when HA connects to your Vera controller.
+Switches, lights (incl. dimmers), sensors and binary sensors are supported and will be automaticaly added when HA connects to your Vera controller.
 
-To use  Vera devices in your installation, add the following to your configuration.yaml file using the IP and port number of your Vera controller:
+To use Vera devices in your installation, add the following to your configuration.yaml file using the IP and port number of your Vera controller:
 
 ```yaml
 vera:
   vera_controller_url: http://192.168.1.161:3480/
 ```
 
-By default your switches will be added to HA as switches, however if some of them are light switches, you can tell HA this using the optional ```lights``` parameter as shown below.
+By default your switches will be added to HA as switches. However if some of them are light switches, you can tell HA this using the optional ```lights``` parameter as shown below.
 
-Vera imports detailed zwave devices into HA - this can include system devices and other devices that you don't use, you can tell HA not to load these devices using the ```exclude:``` parameter as shown below.
+Vera imports detailed zwave devices into HA. This can include system devices and other devices that you don't use; you can tell HA not to load these devices using the ```exclude:``` parameter as shown below.
 
-You can find the vera device id either by looking at your vera controller - or by checking the ```Vera Device Id``` attribute on each device imported into HA.
+You can find the Vera device id either by looking at your Vera controller or by checking the ```Vera Device Id``` attribute on each device imported into HA.
 
 ```yaml
 vera:
